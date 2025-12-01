@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>My Portfolio</title>
+<title>Hafsa Nadeem</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,8 +13,7 @@
 <body>
 
   <aside class="sidebar" id="sidebar">
-    <button  id="close-button" style="background-color: #03030300; color: white; border-style: none;
-    margin-top: 0px; display: none;"><i onclick="Close()" class="fa-solid fa-xmark mobile-view" style="font-size: 20px;"></i></button>
+    <button  id="close-button"><i onclick="Close()" class="fa-solid fa-xmark mobile-view" style="font-size: 20px;"></i></button>
     <img src="pic.jpeg" alt="" style="border: 2px solid #4caf50; border-radius: 10%; margin-bottom: 20px;">
     <nav>
         <a href="#home" class="active"><i class="fa-regular fa-house" style="margin-right: 10px;"></i>Home</a>
@@ -36,8 +35,8 @@
       <div></div>
       <div></div>
     </div>
-    <h3 style="padding-bottom: 10px;">Hafsa Nadeem</h3>
-    <p style="color: #ddd; padding-left: 10px; align-items: center;"> : Creative Web Developer & Designer</p>
+    <h3 style="padding-top: 10px;">Hafsa Nadeem</h3>
+    <p style="color: #ddd; padding-left: 10px; padding-top: 20px; align-items: center;"> : Creative Web Developer & Designer</p>
   </header>
 
   <section id="home" class="home">
@@ -47,7 +46,7 @@
         <p>Crafting meaningful digital experiences through thoughtful design and innovative solutions. I blend creativity with strategy to bring brands to life and connect with audiences on a deeper level.</p>
         <div>
             <a href="#projects"><button>View My Work</button></a>
-            <a href="#contact"><input href="#contact" type="button" value="Get in Touch"></a>
+            <a href="#contact"><button>Get in Touch</button></a>
         </div>
     </div>
     <div class="home-pic">
@@ -62,13 +61,13 @@
 <section id="about" class="about">
   <h2 class="title-font">Hi, I am Hafsa Nadeem</h2>
   <!-- <p>Passionate Web Developer delivering responsive, scalable, and user‑friendly digital experiences</p> -->
-  <div style="display: flex; flex-direction: row;" class="about-section">
-    <div style=" float: left; width: 30%;" class="about-img">
-      <img src="profile.jpeg" alt="Hafsa Nadeem" style="width: 300px; height: 350px; border-radius: 10%; object-fit: cover; box-shadow: 0 8px 16px rgba(0,0,0,0.5); animation: fadeInScale 1s ease forwards; margin: 10px;" />
+  <div  class="about-section">
+    <div class="about-img">
+      <img src="profile.jpeg" class="about-pic" alt="Hafsa Nadeem"  />
       <span><i class="fa-solid fa-location-dot" style="font-size: 18px; margin: 10px 10px 10px 28px;"></i>Lahore, Pakistan</span>
       <ul><i class="fa-regular fa-circle" style="font-size: 12px; margin: 10px 10px 10px 0px;"></i>      Available for Projects</ul>
     </div>
-    <div style=" float: right; width: 90%; margin: 0px 0px 0px 60px;" class="about-detail">
+    <div class="about-detail">
         <p style="margin: 10px 0px; color: #ddd; width: 100%;">
       I am a passionate <span style="color: black;"><b>Web Developer</b></span> with strong expertise in <span style="color: black;"><b>front‑end technologies</b></span> including <span style="color: black;"><b>HTML, CSS, and JavaScript</b></span>, creating responsive and user‑friendly interfaces. I specialize in modern front‑end development and have hands‑on experience with frameworks and tools that bring designs to life with precision and creativity.</p>
       <p>Beyond front‑end, I am skilled in <span style="color: black;"><b>Laravel</b></span> for robust back‑end development and <span style="color: black;"><b>WordPress</b></span> for dynamic content management solutions, enabling me to deliver complete end‑to‑end web projects. My focus is on building clean, efficient, and scalable applications that balance functionality with great user experience.</p>
@@ -99,14 +98,14 @@
     </div>
     <div>
         <a href="#projects"><button>View Case Studies</button></a>
-        <a href="#contact"><input href="#contact" type="button" value="Start a Project"></a>
+        <a href="#contact"><button>Start a Project</button></a>
     </div>
   </div>
 
-<section>
-  <h2 style="margin-left: 100px;">Projects</h2>
-  <div  id="projects" class="projects">
-    
+<h2 class="projects-heading">Projects</h2>
+
+<section id="projects" class="projects">
+
     <div class="project">
       <h3>Javascript Calculator</h3>
       <img src="calculator.png" alt="">
@@ -141,13 +140,10 @@
         </ol>
       <ol><b>Skills Demonstrated:</b> DOM manipulation, state management, user interaction design</ol>
     </div>
-    
-  
-  </div>
 </section>
 
 <section id="services">
-  <h2 style="margin-left: 200px;">Services</h2>
+  <h2>Services</h2>
   <div class="services">
     <div class="service">
       <i class="fa-solid fa-palette"></i>
