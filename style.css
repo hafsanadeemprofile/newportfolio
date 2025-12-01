@@ -427,7 +427,7 @@ footer {
     color: #999;
 }
 
-@media (min-width:1024px) {
+@media (min-width:1025px) {
     header { position: relative; left: 280px; width: 100%; }
   #close-button{ display: none;}
   section {position: relative; left: 80px; top: 50px; padding: 80px 0px 80px 70px; width: 70%;}
@@ -437,9 +437,10 @@ footer {
   footer{ position: relative;left: 7%; }
 }
 /* MOBILE RESPONSIVE - TABLET */
-@media (max-width: 1025px) and (min-width: 767px) {
+@media (max-width: 1025px) and (min-width: 768px) {
     body{ margin: 0; padding: 0; }
-    .sidebar { width: 20%; height: 100vh; position: fixed; top: 0; bottom: 0; display: none;}
+    .sidebar { transform: translateX(-100%); scroll-behavior: smooth; width: 20%; height: 100vh; position: fixed; top: 0; bottom: 0;}
+    .sidebar.show { transform: translateX(0); }
     header{ position: relative; left: 0;}
     .burger { display: flex; }
     #header {width: 100%; position: fixed;} 
@@ -536,3 +537,4 @@ footer {
     section { padding: 60px 15px; }
     .project, .service { padding: 25px 20px; }
 }
+
